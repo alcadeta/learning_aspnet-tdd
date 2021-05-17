@@ -24,6 +24,7 @@ namespace LandonHotel
             services.AddMvc();
             services.AddTransient<IRoomService, RoomService>();
             services.AddTransient<IBookingService, BookingService>();
+            services.AddTransient<IRoomsRepository, RoomsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
